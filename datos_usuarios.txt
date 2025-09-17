@@ -1,1 +1,0 @@
-model name	: Intel(R) Celeron(R) N5100 @ 1.10GHz
