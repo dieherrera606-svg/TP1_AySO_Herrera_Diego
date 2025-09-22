@@ -1,0 +1,704 @@
+man man
+man cat
+pwd
+whoami
+who
+w
+ls
+ls -l
+ls - la
+ls -la
+echo hola mundo
+echo $HOME
+mkdir clase4
+ls -l
+cd clase4
+ls -l
+cd ..
+pwd
+cd clase4
+pwd
+cd $HOME
+pwd
+cd clase4
+echo linea1
+echo linea1 > archivo1.txt
+ls -l
+cat archivo1.txt
+cat > archivo2.txt
+ls -l
+cat archivo2.txt
+cat *.txt
+cat archivo1.txt
+cat archivo1.txt > archivo3.txt
+ls -l
+cat archivo3.txt
+cat archivo1.txt >> archivo2.txt
+cat archivo2.txt
+cat archivo1.txt archivo2.txt > archivo4.txt
+ls -l
+cat archivo4.txt
+cd ..
+mkdir documentos
+cd documentos
+cd ..
+cd clase4
+ls -l
+cat archivo4.txt
+grep linea2 archivo4.txt
+grep linea1 archivo4.txt
+grep -n linea1 archivo4.txt
+grep -c linea1 archivo4.txt
+grep Linea1 archivo4.txt
+grep -i LInea1 archivo4.txt
+grep -iv LInEa1 archivo4.txt
+cd ..
+pwd
+ssh-keygent -t ed25519
+ssh-keygen -t ed25519
+ls -l
+ls -la
+cd .ssh
+ls -l
+cat id_ed25519.pub
+cat id_ed25519
+clear
+cd $HOME
+pwd
+tree
+apt install tree
+sudo apt install tree
+tree
+sudo snap install tree
+tree
+cd clase4
+mkdir practica
+cd practica
+ls -l
+touch practica1.txt
+ls -l
+cat practica1.txt
+cp practica1.txt practica2.txt
+ls -l
+rm practica1.txt
+ls -l
+mv practica2.txt /home/vagrant/clase4
+ls -l
+cd ..
+rmdir practica
+ls -l
+id
+mkdir dir1 dir2 dir3
+ls -l
+tree
+mkdir -p dir1/dir2/dir3/dir4
+ls -l
+tree
+mkdir -p {compras,ventas}/{doc1 , doc2 , doc3}
+tree
+mkdir -p {compras,ventas}/{doc2,doc3}
+tree
+exit
+ls -l
+tree
+cat > practica1.txt
+ls
+ls -l
+rdmir pratica1.txt
+rmdir practica1.txt
+rm practica1.txt
+ls -l
+tree
+cd documentos
+cat > practica1.txt
+ls
+cat practica.txt
+cat practica1.txt
+cat > practica2.txt
+cat practica1.txt practica2.txt > practica3.txt
+cat practica3.txt
+cd..
+cd
+mkdir documento2
+cd documento2
+cat > archivo1.txt
+cat > archivo2.txt 
+greep dias archivo1.txt
+grep dias archivo1.txt
+grep -n dias archivo1.txt
+grep -c dias archivo1.txt
+grep Martes archivo1.txt | grep Miercoles archivo2.txt
+grep -i martes *
+exit
+pwd
+ls -l
+cd clase4
+tree
+mkdir facturas pedidos
+tree
+mkdir -p clientes/{facturas,pedidos}
+tree
+mkdir -p {clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p contactos/{clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p herrera1/contactos/{clientes,proveedores}/{facturas,pedidos}
+tre
+tree
+mkdir -p herrera2/{mama/hijo{1..3},papa/{hijo{1..3},ahijado}
+tree
+rm -m herrra2
+rmdir herrera2
+rmdir -m herrera2
+mkdir -p {herrera3/{mama/hijo{1..3},papa/{hijo{1..3},ahijado}}
+tree
+rm -r herrera2
+rm -r ventas pedidos 
+rm -r compras dir2 dir3 doc2 doc3}
+tree
+rm *.txt
+rm practica2.txt
+tree
+rm ,
+rm -r ,
+tree
+mv proveedores
+mv --help
+mv proveedores proveedor
+tree
+mv {herrera3 herrera2
+tree
+whoami
+clear
+whoami
+id
+cat /etc/passwd
+grep -i vagrant /etc/passwd
+cat /etc/shadow
+sudo cat /etc/shadow
+sudo grep vagrant /etc/shadow
+sudo cat /etc/group
+grep vagrat /etc/group
+grep vagrant /etc/group
+sudo su
+groupadd Alumnos
+sudo groupadd Alumnos
+cat /etc/group
+sudo useradd -m -s /bin/bash -c "Usuario pepe" -G Alumnos pepe
+cat /etc/group
+cat / etc/passwd
+cat /etc/passwd
+ls -l /home
+passwd pepe
+sudo passwd pepe
+sudo cat /etc/shadow
+su pepe
+su - pepe
+sudo ls -l /home/pepe
+su - pepe
+sudo usermod -aG sudo pepe
+su - pepe
+cd ..
+ls -l
+sudo ls -l /home/pepe
+sudo chown vagrant:vagrant /home/pepe.txt
+sudo chown vagrant:vagrant /home/pepe/pepe.txt
+pwd
+mkdir clase5
+cd clase5
+ls -l
+touch practica1.txt 
+touch practica2.txt 
+ls -l
+chmod 600 pactica1.txt
+chmod 600 practica1.txt
+ls -l
+chmod 444 practica2.txt
+ls -l
+chmod 777 practica2.txt
+ls -l
+cd ..
+pwd
+ls -l
+cd repogit
+ls -l
+git clone git@github.com:dieherrera606-svg/TP_AySO_Herrera_Diego.git
+ls -l
+cd TP_AySO_Herrera_Diego
+ls -l
+cat /etc/os-release
+grep HOME_URL /etc/os-release
+grep HOME_URL /etc/os-release > datos_url.txt
+ls -l
+exit
+ls
+ls -l
+cd repogit
+ls -l
+cd TP_AySO_Herrera_Diego
+cat /etc/os-release
+man grep
+grep -i Home_url /etc/os-release
+grep -i Home_url /etc/os-release > datos_url.txt
+whoami
+cat /etc/os-release
+usuario:<vagrant>
+echo "Usuario=$(whoami)" > datos_usuario.txt
+git add .
+git config -global user.mail "dieherrera606@gmail.com"
+git config --global user.mail "dieherrera606@gmail.com"
+git config --global user.name "vagrant"
+git commit -m "ADD: agregado 1er
+ejercicio sobre datos_usuarios.txt" 
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+“feat: Añadiendo información de CPU”
+git commit -m “feat: Añadiendo información de CPU”
+git commit -m "feat: Añadiendo informacion de CPU"
+EOF
+
+cat <<EOF>> README.md
+Alumno <Diego>
+Division <113>
+Turno <Tu-turno>
+EOF
+
+git add README.md datos_usuarios.txt
+git commit -m "ADD: añadiendo readme y datos de usuario"
+git push
+mkdir -p {material1,material2}/{uni1,uni2,uni3}
+tree
+ls -l
+whoami
+ls -l README.md
+cd README.md
+less README.md
+cat <<EOF>> RADME.md
+Turno <Mañana>
+EOF
+
+gid add README.md datos_usuarios.txt
+git add README.md datos_usuarios.txt
+git push
+less README.md
+less datos_usuarios.txt
+cat datos_usuario.txt
+cat datos_usuarios.txt
+cat README.md
+cat<<EOF>> README.md 
+Turno <Mañana>
+EOF
+
+git add README.md datos_usuarios.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+less README.md
+cd ..
+ls -l
+cd clae4
+cd clase4
+ls -l
+cat clientes
+cd clientes
+ls -l
+tree
+cat facturas
+cd ..
+tre
+tree
+cd documetos
+cd documentos
+ls -l
+tree
+cat practica1.txt
+rm linea1
+cd ..
+tree
+cd repogit
+tree
+cd TP_AySO_Herrera_Diego
+tree
+less README.md
+less RADMEmd
+less RADME.md
+rm RADME.md
+tree
+less datos_url.txt
+cat datos_usuario.txt
+less datos_usuario.txt
+less datos_usuarios.txt
+sed -i '3d' README.md
+less README.md
+cd ..
+exit
+cd TP_AySO_Herrera_Diego
+tree
+cd repogit
+cd TP_AySO_Herrera_Diego
+tree
+rm README.md
+tree
+cat <<EOF >> README.md 
+Alumno : <Diego Herrera>
+Division : <113>
+Turno : <Mañana>
+EOF
+
+git add README.md datos_usuarios.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+tree
+less README.md
+cd datos_usuarios.txt
+git commit datos_usuarios.txt -m “feat: Añadiendo información de CPU”
+git commit -m datos_usuarios "feat: añadiendo informacion de CPU"
+git commit -m datos_usuarios "feat: añadiendo informacion de cpu"
+clear
+git commit datos_usuarios.txt -m “feat: Añadiendo información de CPU”
+git commit datos_usuarios.txt -m "feat: Añadiendo información de CPU"
+git punch
+tree
+rm -r datos_usuarios.txt
+tree
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+git commit -m "feat: añadiendo informacion de la cpu"
+git status
+git push origin main
+git commit -m datos_usuarios.txt "feat: añadiendo informacion de la cpu"
+tree
+cat datos_usuarios.txt
+git punch
+git add
+git status
+tree
+cat datos_usuarios.txt
+git status
+tree
+rm .txt
+rm datos_url.txt
+rm datos_usuario.txt
+rm datos_usuarios.txt
+REAMDE.md
+README.md
+rm README.md
+tree
+grep -i Home_Url/etc/os-release > datos_url.txt
+cd repogit
+cd TP_AySO_Herrera_Diego
+tree
+rm datos_url.txt
+tree
+cat /etc/os-release
+grep -i Home_Url/etc/os-release > datos_url.txt
+cd repogit
+cd TP_AySO_Herrera_Diego
+tree
+rm datos_url.txt
+rm -r material1 material2
+ree
+tree
+grep -i Home_Url/etc/os-release > datos_url.txt
+ls -l
+cd repogit
+cd TP_AySO_Herrera_Diego
+tree
+less datos_url.txt
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+git add.
+git add .
+git config --global user.email "dieherrera606@gmail.com"
+git config --global user.name "Vagrant"
+git commit -m "ADD : agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+git add .
+git commit -m "feat: añadiendo informacion de cpu"
+git push
+cat <<EOF>>README.md
+Alumno <Diego Herrera>
+Division <113>
+Turno <Mañama>
+ EOF
+EOF
+
+tree
+rm README.md
+tree
+cat <<EOF>> README.md
+Alumno : Diego Herrea
+EOF
+
+rm README.md
+cat <<EOF>> README.md
+Alumno : Diego Herrera
+Division : 113
+Turno : Mañana
+EOF
+
+git add .
+git add README.md datos_usuarios.txt
+git commit -m "ADD: añadiendo readme y datos dd usuario"
+git push
+mkdir -p {material1,material2}/{uni1,uni2,uni3}
+tree
+cat datos_url.txt
+less datos_url.txt
+grep -i home_url/etc/os-release
+cd repogit
+cd TP_AySO_Herrera_Diego
+tree
+cat README.md
+cat datos_url.txt
+cat datos_usuario.txt
+datos_usuarios.txt
+rm README.md
+rm datos_usuarios.txt datos_usuario.txt
+tree
+rm datos_url.txt
+tree
+cat /etc/os-release
+grep -i Home_url/etc/os-release > datos_url.txt
+ls -l
+rm -r repogit
+rm: cannot remove 'repogit/TP_AySO_Herrera_Diego/.git/objects/94': Directory not empty
+rm: remove write-protected regular file 'repogit/TP_AySO_Herrera_Diego/.git/objects/5a/cae8371a39375d0e8d192857b5567c68130a51'? -r
+rm: cannot remove 'repogit/TP_AySO_Herrera_Diego/.git/objects/5a': Directory not empty
+rm: remove write-protected regular file 'repogit/TP_AySO_Herrera_Diego/.git/objects/8f/3cd0896e19d1e6d9f28d18b03e42a9cfae6ff4'? rm -rf repogit/TP_AySO_Herrera_Diego
+rm: cannot remove 'repogit/TP_AySO_Herrera_Diego/.git/objects/8f': Directory not empty
+rm: remove write-protected regular file 'repogit/TP_AySO_Herrera_Diego/.git/objects/6e/3ed253758f3ac69dc63b2b49a842cb29748253'? sudo rm -rf repogit/TP_AySO_Herrera_Diego
+rm: cannot remove 'repogit/TP_AySO_Herrera_Diego/.git/objects/6e': Directory not empty
+rm: remove write-protected regular file 'repogit/TP_AySO_Herrera_Diego/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391'? chmod -R u+w repogit/TP_AySO_Herrera_Diego
+rm: cannot remove 'repogit/TP_AySO_Herrera_Diego/.git/objects/e6': Directory not empty
+rm: remove write-protected regular file 'repogit/TP_AySO_Herrera_Diego/.git/objects/a8/18319655b8e02aee623a34247c7287736edfbc'? find repogit/TP_AySO_Herrera_Diego -type f -exec rm -f {} \;
+rm: cannot remove 'repogit/TP_AySO_Herrera_Diego/.git/objects/a8': Directory not empty
+rm: remove write-protected regular file 'repogit/UTN-FRA_SO_onBording/.git/objects/pack/pack-d81b80acd794a313d3888d86575b7b8711087bce.idx'? mv repogit/TP_AySO_Herrera_Diego/.git repogit/TP_AySO_Herrera_Diego/.git_backup
+rm: remove write-protected regular file 'repogit/UTN-FRA_SO_onBording/.git/objects/pack/pack-d81b80acd794a313d3888d86575b7b8711087bce.pack'?
+ls -l
+sudo rm -rf repogit/TP_AySO_Herrera_Diego
+ls -l
+tree
+cd repogit
+ls -l
+cd Tgit@github.com:dieherrera606-svg/TP1_AySO_Herrera_Diego.git
+ls -l
+git clone git@github.com:dieherrera606-svg/TP1_AySO_Herrera_Diego.git
+ls -l
+pwd
+cd TP1_AySO_Herrera_Diego/
+pwd
+mkdir ejemplo
+ls -l
+tree
+rmdir ejemplo
+tree
+touch hola
+tree
+add .
+git add .
+git push
+git push -u origin main
+ls -l
+rm hola
+ls -l
+grep -i home_url/etc/os-release > datos_url.txt
+exit
+ls -l
+cd repogit
+cd TP1_AySO_Herrera_Diego
+tree
+rm datos_url.txt
+tree
+pwd
+git remote -v
+grep -i Home_Url /etc/os-release > datos_url.txt
+ls -l
+cat datos_url.txt
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+git add .
+git config --global user.email "dieherrera606@gmail.com"
+git config --global user.name "diegohh_02"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status 
+git push
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+git add .
+git commit -m "feat : añadiendo informacion de cpu"
+git status
+git push
+cat <<EOF>> README.md
+Alumno : Diego Herrera
+Division : 113
+Turno : Mañana
+EOF
+
+git add README.md datos_usuarios.txt
+git commit -m "ADD : añadieno README y datos de usuario"
+git push
+mkdir -p {materia1,materia2}/{uni1,uni2,uni3}
+tree
+cat datos_url.txt
+cat datos_usuario.txt
+cat datos_usuarios.txt
+exit
+cd repogit
+cd TP1_AySO_Herrera_Diego
+tree
+sed -i '3d' README.md
+sed -i '2d' README.md
+sed -i '1d' README.md
+cat README.md
+cd README.md
+cat README.md
+rm datos_url.txt
+rm datos_usuario.txt
+rm datos_usuarios.txt
+tree
+grep -i Home_Url /etc/os-release > datos_url.txt
+whoami
+echo "Usuario = $(whoami)" > datos_usuario.txt
+tree
+cat datos_url.txt
+cat datos_usuario.txt
+git add .
+git config --global user.email "dieherrera606@gmail.com"
+git config --global user.name "diegohh_02"
+git commit -m "ADD : agregado el 1er ejercicio sobre dato_usuario.txt"
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+git add . 
+git commit -m "feat : Añadiendo informacion de la cpu"
+git status
+git push
+tree
+cat datos_usuarios.txt
+cat <<EOF>> README.md
+Alumno : Diego
+Division : 113
+Turno : Mañana 
+EOF
+
+cat README.md
+git add README.md datos_usuarios.txt
+git commit -m "ADD : Añadiendo README y datos de usuario"
+git status
+git push
+tree
+cat datos_usuarios.txt
+exit
+cd repogit
+ls -l
+cd TP1_AySO_Herrera_Diego
+ls -l
+rmdir materia1 materia2
+rmdir -r materia1
+rmdir materia1
+rm -r materia1
+rm -r materia2
+ls -l
+echo $HOME
+mkdir -p ∼/{materia1,materia2}/{uni1,uni2,uni3}
+ls -l
+cd ..
+ls -l
+cd repogit
+cd TP1_AySO_Herrera_Diego
+ls -l
+cd ∼
+ls -l
+rm -r ∼
+rmdir -r ∼
+cd ..
+rm -r ∼
+ls -l
+cd
+cd repogit/TP1_AySO_Herrera_Diego
+pwd
+cd ..
+cd..
+cd ..
+ls -l
+mkdir clase6
+cd clase6
+ls -l
+touch practica.txt
+ls -l
+echo ls -l > script1
+ls -l
+cat script1
+bash script1
+vim script2.sh
+ls -l
+cat script2.sh
+./script2.sh
+chmod 775 script2.sh
+ls -l
+./script2.sh
+history -a
+$HOME/.bash_history
+history
+exit
+cd repogit
+cd TP1_ySO_Herrera_Diego
+cd TP1_AySO_Herrera_Diego
+ls -l
+pwd
+$HOME
+mkdir -p /home/vagrant {materia1,materia2}/{uni1,uni2,uni3}
+ls -l
+cd ..
+cd..
+cd ..
+ls -l
+cd repogit
+cd TP1_AySO_Herrera_Diego
+ls -l
+rmdir -r materia1
+rmd -r materia1 materia2
+rm -r materia1 materia2
+ls -l
+mkdir -p ~/materia{1,2}/uni{1,2,3}
+ls -l
+cd ..
+ls -l
+rm -r materia2 materia1
+ls -l
+cd repogit
+cd TP1_AySO_Herrera_Diego
+mkdir -p /home/vagrant/{materia1,materia2}/{uni1,uni2,uni3}
+ls -l
+cd ..
+le -l
+ls -l
+cd ..
+ls -l
+cd materia1
+ls -l
+cd ..
+cd repogit
+cd TP1_AySO_Herrera_Diego
+cd ..
+ls -l
+rm -r materia1 materia2 
+ls -l
+cd repogit
+cd TP1_AySO_Herrera_Diego
+mkdir -p /home/vagrant/{materia1,materia2}/{uni1,uni2,uni3}
+ls -l
+vim script_dir,sh
+ls -l
+rm -r script_dir,sh
+ls -l
+vim script_dir.sh
+ls -l
+chmod 775 script_dir.sh
+ls -l
+git add .
+git commit -m "ADD : Añadiendo Script"
+git push
+history -a
+history
